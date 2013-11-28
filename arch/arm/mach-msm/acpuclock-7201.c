@@ -210,11 +210,8 @@ static struct clkctl_acpu_speed pll0_960_pll1_196_pll2_1200_pll4_800[] = {
 	{ 1, 600000, ACPU_PLL_2, 2, 1, 75000, 3, 6, 200000 },
 	{ 1, 800000, ACPU_PLL_4, 6, 0, 100000, 3, 7, 200000 },
 	{ 1, 1000000, ACPU_PLL_4, 6, 0, 130000, 3, 7, 250000 },
-    { 1, 1200000, ACPU_PLL_4, 6, 0, 130000, 3, 7, 250000 },
-    { 1, 1300000, ACPU_PLL_4, 6, 0, 130000, 3, 7, 250000 },
-    { 1, 1400000, ACPU_PLL_4, 6, 0, 130000, 3, 7, 250000 },
-    { 1, 1500000, ACPU_PLL_4, 6, 0, 130000, 3, 7, 250000 },
-    { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, {0, 0, 0, 0}, {0, 0, 0, 0} }
+        { 1, 1200000, ACPU_PLL_4, 6, 0, 130000, 3, 7, 250000 },
+        { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, {0, 0, 0, 0}, {0, 0, 0, 0} }
 };
 
 /* 7627aa PLL4 @ 1008MHz with GSM capable modem */
@@ -345,9 +342,6 @@ static struct clkctl_acpu_speed pll0_960_pll1_737_pll2_1200_25a[] = {
 #define PLL_1008_MHZ	52
 #define PLL_1056_MHZ	55
 #define PLL_1200_MHZ	62
-#define PLL_1300_MHZ    65
-#define PLL_1400_MHZ    72
-#define PLL_1500_MHZ    75
 
 #define PLL_CONFIG(m0, m1, m2, m4) { \
 	PLL_##m0##_MHZ, PLL_##m1##_MHZ, PLL_##m2##_MHZ, PLL_##m4##_MHZ, \
