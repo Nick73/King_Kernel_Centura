@@ -6,12 +6,12 @@ King Kernel for Samsung Galaxy Centura (ST) (amazing3g) by Nick_73
 
     *Cherrypicked tweaks from other kernel sources
 
-    *Max CPU frequency up to 1.5 GHz
+    *Max CPU frequency up to 1.2 GHz
 
 #How To Build
 
-    git clone https://github.com/Nick73/android_kernel_samsung_centura_sch738c.git -b King_Kernel
-    cd android_kernel_samsung_centura_sch738c
+    git clone https://github.com/Nick73/King_Kernel_Centura
+    cd King_Kernel_Centura
     export ARCH=arm
     make 1king_defconfig
     make
