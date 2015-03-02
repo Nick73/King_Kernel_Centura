@@ -159,6 +159,11 @@
 		lock = &per_cpu(name##_lock, i);			\
 		arch_spin_lock(lock);					\
 	}								\
+	register_hotcpu_notifier(&name##_lg_cpu_notifier);		\
+	get_online_cpus();						\
+	for_each_online_cpu(i)						\
+		cpu_set(i, name##_cpus);				\
+	put_online_cpus();						\
  }									\
  EXPORT_SYMBOL(name##_global_lock_online);				\
 									\
